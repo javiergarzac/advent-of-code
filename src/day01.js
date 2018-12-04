@@ -1,6 +1,6 @@
 import { frequencies } from './inputDay01';
 
-export const frequencyInput = frequencies.split('\n').map(x => Number(x));
+const frequencyInput = frequencies.split('\n').map(x => Number(x));
 
 // Part 1
 const getFrequencyNumber = (frequencyInput) => {
@@ -10,7 +10,7 @@ const getFrequencyNumber = (frequencyInput) => {
 console.log(getFrequencyNumber(frequencyInput));
 
 // Part 2
-export const checkRepeatedFrequency = (frequencyInput) => {
+const checkRepeatedFrequency = (frequencyInput) => {
 	const frequencyList = new Set();
 	let calculatedFrequency = 0;
 	let repeatedValue = null;
