@@ -1,6 +1,7 @@
-const frequencies = require('./inputDay01');
+import { frequencies } from './inputDay01';
 
-export const frequencyInput = frequencies.frequencies.split('\n').map(x => Number(x));
+export const frequencyInput = frequencies.split('\n').map(x => Number(x));
+
 // Part 1
 const getFrequencyNumber = (frequencyInput) => {
   return frequencyInput.reduce((accumulated, current) => accumulated + current)
